@@ -23,13 +23,13 @@ jobs:
     - name: executing test
       run: pytest
       continue-on-error: true
-    - name: chceking
+    - name: checking
       run: echo testing after error execution
     - name: docker installation
       uses: docker-practice/actions-setup-docker@master
       timeout-minutes: 12
     - name: build docker image
-    - run: |  
+      run: |  
         set -x
 
         docker version
