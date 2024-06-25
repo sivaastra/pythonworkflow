@@ -8,9 +8,8 @@ on:
  workflow_dispatch:      
 
 jobs:
-  #build-and-test:
-  #  runs-on: ubuntu-latest
-
+  build-and-test:
+    runs-on: ubuntu-latest
     steps:
     - name: buildstep1
       uses: actions/checkout@v4
@@ -40,5 +39,5 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}  
-     - name: docker push 
-       run: docker push sivaastra2023/mydockerimage1
+    - name: docker push 
+      run: docker push sivaastra2023/mydockerimage1
