@@ -22,4 +22,4 @@ jobs:
     - name: py build installing dependences     
     - run: pip install -r requirements.txt
     - name: executing test
-    -run: pytest
+    - run: pytest
