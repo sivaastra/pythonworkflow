@@ -25,3 +25,12 @@ jobs:
       continue-on-error: true
     - name: chceking
       run: echo testing after error execution
+    - name: docker installation
+      uses: docker-practice/actions-setup-docker@master
+      timeout-minutes: 12
+    - name: build docker image
+    - run: |  
+        set -x
+
+        docker version
+        docker build -t mydockerimage .
