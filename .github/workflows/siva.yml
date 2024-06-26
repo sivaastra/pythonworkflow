@@ -11,6 +11,8 @@ jobs:
   build-and-test:
     runs-on: runnersiva1
     steps:
+    - name: login as root user
+      run: sudo su -  
     - name: buildstep1
       uses: actions/checkout@v4
     - uses: actions/setup-python@v5
