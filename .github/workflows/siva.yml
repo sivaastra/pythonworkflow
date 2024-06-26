@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
+    runs-on: runnersiva1
     steps:
     - name: buildstep1
       uses: actions/checkout@v4
